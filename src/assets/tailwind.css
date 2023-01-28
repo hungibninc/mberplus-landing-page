@@ -16,9 +16,6 @@
 }
 
 @layer base {
-	html {
-		font-family: Gotham-Book;
-	}
 	.Gotham-Black {
 		font-family: Gotham-Black;
 	}
@@ -28,7 +25,17 @@
 	.Gotham-Medium {
 		font-family: Gotham-Medium;
 	}
-	.Container {
-		@apply xl:max-w-7xl mx-3 2xl:mx-auto;
+	html {
+		@apply Gotham-Book text-lg font-normal text-slate-600
 	}
+	h1, h2, h3, h4, h5, h6 {
+		@apply Gotham-Medium font-bold
+	}
+}
+
+@layer components {
+	.container {
+    @apply px-5 mx-auto;
+  }
+	
 }
