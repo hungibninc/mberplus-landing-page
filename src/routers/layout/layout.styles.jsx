@@ -19,7 +19,7 @@ export const LogoContainer = tw.div`
 `;
 
 export const Logo = tw(LogoSvg)`
-  h-7.5
+  h-8
   sm:h-12
 `;
 

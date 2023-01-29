@@ -2,20 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-	font-family: 'Gotham-Black';
-	src: url('./fonts/Gotham/Gotham-Black.ttf');
-}
-@font-face {
-	font-family: 'Gotham-Book';
-	src: url('./fonts/Gotham/Gotham-Book.ttf');
-}
-@font-face {
-	font-family: 'Gotham-Medium';
-	src: url('./fonts/Gotham/Gotham-Medium.ttf');
-}
-
 @layer base {
+	@font-face {
+		font-family: 'Gotham-Black';
+		src: url('./fonts/Gotham/Gotham-Black.ttf');
+	}
+	@font-face {
+		font-family: 'Gotham-Book';
+		src: url('./fonts/Gotham/Gotham-Book.ttf');
+	}
+	@font-face {
+		font-family: 'Gotham-Medium';
+		src: url('./fonts/Gotham/Gotham-Medium.ttf');
+	}
+
 	.Gotham-Black {
 		font-family: Gotham-Black;
 	}
@@ -25,17 +25,18 @@
 	.Gotham-Medium {
 		font-family: Gotham-Medium;
 	}
-	html {
+	
+	body {
 		@apply Gotham-Book text-lg font-normal text-slate-600
 	}
-	h1, h2, h3, h4, h5, h6 {
+	h1, h2, h3, h4, h5, h6, strong {
 		@apply Gotham-Medium font-bold
 	}
 }
 
 @layer components {
 	.container {
-    @apply px-5 mx-auto;
+    @apply px-5 mx-auto max-w-7xl;
   }
 	
 }
