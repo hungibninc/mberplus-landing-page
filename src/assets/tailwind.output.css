@@ -658,12 +658,16 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
 }
 
-.h-screen {
-  height: 100vh;
+.h-7\.5 {
+  height: 1.875rem;
 }
 
-.w-32 {
-  width: 8rem;
+.h-7 {
+  height: 1.75rem;
+}
+
+.h-screen {
+  height: 100vh;
 }
 
 .w-full {
@@ -1004,8 +1008,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (min-width: 640px) {
-  .sm\:w-48 {
-    width: 12rem;
+  .sm\:h-12 {
+    height: 3rem;
   }
 
   .sm\:text-\[32px\] {
@@ -1032,6 +1036,14 @@ h1, h2, h3, h4, h5, h6 {
 
   .lg\:justify-between {
     justify-content: space-between;
+  }
+
+  .lg\:bg-transparent {
+    background-color: transparent;
+  }
+
+  .lg\:bg-\[url\(\"\.\.\/assets\/banner-bg\.jpg\"\)\] {
+    background-image: url("../assets/banner-bg.jpg");
   }
 
   .lg\:text-xl {

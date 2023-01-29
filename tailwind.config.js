@@ -28,6 +28,7 @@ module.exports = {
         '38-c': ['38px', '50px'],
       },
       spacing: {
+        7.5: '1.875rem',
         /* 84: '21rem',
         88: '22rem',
         92: '23rem', */

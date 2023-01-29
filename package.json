@@ -23,7 +23,7 @@
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",
 		"watch-tw": "npx tailwindcss -i ./src/assets/tailwind.css -o ./src/assets/tailwind.output.css --watch",
-		"start-tw": "concurrently \"react-scripts start\" \"npx tailwindcss -i ./src/assets/tailwind.css -o ./src/assets/tailwind.output.css --watch\""
+		"sta": "concurrently \"react-scripts start\" \"npx tailwindcss -i ./src/assets/tailwind.css -o ./src/assets/tailwind.output.css --watch\""
 	},
 	"eslintConfig": {
 		"extends": [

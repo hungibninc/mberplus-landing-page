@@ -1,11 +1,11 @@
 import { Fragment } from 'react';
-import ImgRewardLoyalty from '../../assets/reward-loyalty.png';
-import { ReactComponent as IcoYoutube } from '../../assets/ico-youtube.svg';
+import RewardLoyaltyImg from '../../assets/reward-loyalty.png';
+import { ReactComponent as YoutubeIco } from '../../assets/ico-youtube.svg';
 
 const Home = () => {
   return (
     <Fragment>
-      <section className='bg-black '>
+      <section className='bg-black lg:bg-transparent lg:bg-[url("../assets/banner-bg.jpg")]'>
         <div className='container flex flex-col lg:flex-row lg:justify-between gap-y-12'>
           <div className='pt-8 space-y-6'>
             <h3 className='text-white text-32-c lg:text-xl xl:text-38-c'>
@@ -20,7 +20,7 @@ const Home = () => {
               leading brands.
             </p>
             <button className='flex items-center px-6 py-2 space-x-2 transition duration-150 ease-in-out rounded rounded-md shadow-md bg-primary hover:bg-primary-600 drop-shadow-md aaa hover:shadow-lg focus:bg-primary-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-lg'>
-              <IcoYoutube />
+              <YoutubeIco />
               <span className='font-bold text-black uppercase Gotham-Medium text-16-c'>
                 Watch The Video
               </span>
@@ -29,7 +29,7 @@ const Home = () => {
           <div className='-mx-10 xl:-mx-0 xl:-mr-14 shrink-0'>
             <img
               className='lg:h-96'
-              src={ImgRewardLoyalty}
+              src={RewardLoyaltyImg}
               alt='Reward Loyalty'
             />
           </div>
