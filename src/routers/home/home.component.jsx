@@ -1,8 +1,6 @@
 import { Fragment } from 'react';
 import { Link } from 'react-router-dom';
-import RewardLoyaltyBannerImg from '../../assets/reward-loyalty.png';
 import RewardLoyaltyImg from '../../assets/reward-loyalty-1.jpg';
-import { ReactComponent as YoutubeIco } from '../../assets/ico-youtube.svg';
 import { ReactComponent as TwitterIco } from '../../assets/ico-twitter.svg';
 import PowerWhatIsImg from '../../assets/power-what-is.png';
 import PowerOfferImg from '../../assets/power-offer.png';
@@ -15,41 +13,12 @@ import ClientMelissaImg from '../../assets/client-melissa.jpg';
 import ClientTexiSmithImg from '../../assets/client-texi-smith.jpg';
 import ClientWpRaskellImg from '../../assets/client-wp-raskell.jpg';
 import CarouselBanner from '../../components/carousel/carousel';
+import MainBanner from '../../components/main-banner/main-banner.component';
 
 const Home = () => {
 	return (
 		<Fragment>
-			<section className='bg-black lg:bg-transparent lg:bg-[url("../assets/banner-bg.jpg")] py-8 xl:pt-16'>
-				<div className='container flex flex-col lg:flex-row lg:justify-between gap-y-12'>
-					<div className='space-y-8'>
-						<h3 className='text-white text-32-36-c lg:text-xl xl:text-38-50-c'>
-							No Stock Risk{' '}
-							<span className='lg:block'>
-								Endless Designs & Personalisation
-							</span>{' '}
-							Flexible & Fully Customisable
-						</h3>
-						<p className='text-white text-16-28-c'>
-							Explore the rewards & loyalty platform behind some of Australia’s
-							leading brands.
-						</p>
-						<button class='flex items-center space-x-2 px-6 py-2 group [transform:translateZ(0)] rounded-md bg-primary overflow-hidden relative before:absolute before:bg-primary-600 before:bottom-0 before:left-0 before:h-full before:w-full before:origin-[100%_100%] before:scale-x-0 hover:before:origin-[0_0] hover:before:scale-x-100 before:transition before:ease-in-out before:duration-500'>
-							<YoutubeIco className='z-0' />
-							<span class='relative z-0 font-bold text-black uppercase Gotham-Medium text-16-28-c group-hover:text-black transition ease-in-out duration-500'>
-								Watch The Video
-							</span>
-						</button>
-					</div>
-					<div className='-mx-10 xl:-mx-0 xl:-mr-14 shrink-0'>
-						<img
-							className='lg:h-96'
-							src={RewardLoyaltyBannerImg}
-							alt='Reward Loyalty'
-						/>
-					</div>
-				</div>
-			</section>
-
+			<MainBanner />
 			<section className='py-14'>
 				<div className='container'>
 					<div className='text-center gap-y-2'>

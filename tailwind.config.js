@@ -2,7 +2,7 @@ const colors = require('tailwindcss/colors');
 
 module.exports = {
 	mode: 'jit',
-	content: ['./public/**/*.html', './src/**/*.{js,jsx,ts,tsx,vue}'],
+	content: ['./public/**/*.html', './src/**/*.{html,js,jsx,ts,tsx,vue}'],
 	theme: {
 		fontFamily: {
 			custom: ['Gotham-Black', 'Gotham-Book', 'Gotham-Medium'],

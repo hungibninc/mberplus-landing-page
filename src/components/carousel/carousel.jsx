@@ -20,49 +20,44 @@ const CarouselBanner = () => {
 			items: 7,
 		},
 		tablet: {
-			breakpoint: { max: 1024, min: 464 },
-			items: 2,
+			breakpoint: { max: 1024, min: 768 },
+			items: 4,
 		},
 		mobile: {
-			breakpoint: { max: 464, min: 0 },
-			items: 1,
+			breakpoint: { max: 768, min: 0 },
+			items: 3,
 		},
 	};
 
 	return (
 		<Carousel
-			responsive={responsive}
-			infinite={true}
 			containerClass='carousel-container'
+			responsive={responsive}
+			arrows={false}
+			infinite={true}
+			autoPlay={true}
+			autoPlaySpeed={3000}
 		>
-			<div className=''>
-				<img
-					className='mx-auto'
-					src={SponsorCricketImg}
-					alt='Cricket Australia'
-				/>
+			<div className='h-40 flex items-center justify-center'>
+				<img className='' src={SponsorCricketImg} alt='Cricket Australia' />
 			</div>
-			<div className=''>
-				<img className='mx-auto' src={SponsorALFImg} alt='AFL' />
+			<div className='h-40 flex items-center justify-center'>
+				<img className='' src={SponsorALFImg} alt='AFL' />
 			</div>
-			<div className=''>
-				<img className='mx-auto' src={SponsorTigerImg} alt='Tiger' />
+			<div className='h-40 flex items-center justify-center'>
+				<img className='' src={SponsorTigerImg} alt='Tiger' />
 			</div>
-			<div className=''>
-				<img
-					className='mx-auto'
-					src={SponsorSuperCheapImg}
-					alt='Super Cheap Auto'
-				/>
+			<div className='h-40 flex items-center justify-center'>
+				<img className='' src={SponsorSuperCheapImg} alt='Super Cheap Auto' />
 			</div>
-			<div className=''>
-				<img className='mx-auto' src={SponsorPAImg} alt='PA' />
+			<div className='h-40 flex items-center justify-center'>
+				<img className='' src={SponsorPAImg} alt='PA' />
 			</div>
-			<div className=''>
-				<img className='mx-auto' src={SponsorRabbitImg} alt='Rabbit' />
+			<div className='h-40 flex items-center justify-center'>
+				<img className='' src={SponsorRabbitImg} alt='Rabbit' />
 			</div>
-			<div className=''>
-				<img className='mx-auto' src={SponsorSydneyImg} alt='Sydney' />
+			<div className='h-40 flex items-center justify-center'>
+				<img className='' src={SponsorSydneyImg} alt='Sydney' />
 			</div>
 		</Carousel>
 	);

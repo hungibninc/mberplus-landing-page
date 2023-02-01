@@ -31,5 +31,22 @@ export const NavLinks = tw.div`
 `;
 
 export const NavLink = tw(Link)`
-  
+`;
+
+export const Footer = tw.div`
+bg-black
+`;
+
+export const FooterContainer = tw.div`
+  container
+  flex
+  flex-row
+  justify-between
+  py-5
+`;
+
+export const Copyright = tw.div`
+  flex
+  items-center
+  text-[#94A3B7]
 `;
