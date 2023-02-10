@@ -36,27 +36,27 @@ const CarouselBanner = () => {
 			arrows={false}
 			infinite={true}
 			autoPlay={true}
-			autoPlaySpeed={3000}
+			autoPlaySpeed={1000}
 		>
-			<div className='h-40 flex items-center justify-center'>
+			<div className='flex h-40 items-center justify-center'>
 				<img className='' src={SponsorCricketImg} alt='Cricket Australia' />
 			</div>
-			<div className='h-40 flex items-center justify-center'>
+			<div className='flex h-40 items-center justify-center'>
 				<img className='' src={SponsorALFImg} alt='AFL' />
 			</div>
-			<div className='h-40 flex items-center justify-center'>
+			<div className='flex h-40 items-center justify-center'>
 				<img className='' src={SponsorTigerImg} alt='Tiger' />
 			</div>
-			<div className='h-40 flex items-center justify-center'>
+			<div className='flex h-40 items-center justify-center'>
 				<img className='' src={SponsorSuperCheapImg} alt='Super Cheap Auto' />
 			</div>
-			<div className='h-40 flex items-center justify-center'>
+			<div className='flex h-40 items-center justify-center'>
 				<img className='' src={SponsorPAImg} alt='PA' />
 			</div>
-			<div className='h-40 flex items-center justify-center'>
+			<div className='flex h-40 items-center justify-center'>
 				<img className='' src={SponsorRabbitImg} alt='Rabbit' />
 			</div>
-			<div className='h-40 flex items-center justify-center'>
+			<div className='flex h-40 items-center justify-center'>
 				<img className='' src={SponsorSydneyImg} alt='Sydney' />
 			</div>
 		</Carousel>
