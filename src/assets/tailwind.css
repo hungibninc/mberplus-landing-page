@@ -42,18 +42,21 @@
 
 @layer components {
 	.container {
-		@apply px-5 mx-auto max-w-7xl;
+		@apply mx-auto max-w-7xl px-5;
 	}
 }
 
 @layer utilities {
 	.box-bg-1 {
-		@apply border-solid border border-slate-200 rounded-lg bg-gray;
+		@apply rounded-lg border border-solid border-slate-200 bg-gray;
 	}
 	.box-bg-2 {
-		@apply border-solid border border-slate-200 rounded-lg shadow-[0_16px_32px_rgba(196,218,241,0.25)];
+		@apply rounded-lg border border-solid border-slate-200 shadow-[0_16px_32px_rgba(196,218,241,0.25)];
 	}
 	.readmore {
-		@apply text-14-28-c uppercase text-slate-900 py-2 px-8 rounded rounded-md bg-slate-100 hover:bg-slate-200 focus:bg-slate-200 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-slate-300;
+		@apply rounded rounded-md bg-slate-100 py-2 px-8 text-14-28-c uppercase text-slate-900 hover:bg-slate-200 focus:bg-slate-200 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-slate-300;
+	}
+	.shine-box-1 {
+		@apply absolute -inset-full top-0 z-10 block h-full w-1/2 -skew-x-12 transform bg-gradient-to-r from-transparent to-green-200 opacity-40 group-hover:animate-shine;
 	}
 }

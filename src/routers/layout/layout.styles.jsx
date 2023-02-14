@@ -17,12 +17,12 @@ export const HeaderContainer = tw.div`
 export const LogoContainer = tw.div`
   cursor-pointer
 `;
-
 export const Logo = tw(LogoSvg)`
+  w-28
   h-8
+  sm:w-48
   sm:h-12
 `;
-
 export const NavLinks = tw.div`
   Gotham-Black
   text-primary

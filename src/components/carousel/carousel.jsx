@@ -8,6 +8,7 @@ import SponsorSuperCheapImg from '../../assets/sponsor-super-cheap.png';
 import SponsorPAImg from '../../assets/sponsor-pa.png';
 import SponsorRabbitImg from '../../assets/sponsor-rabbit.png';
 import SponsorSydneyImg from '../../assets/sponsor-sydney.png';
+import SponsorNetballImg from '../../assets/sponsor-netball.png';
 
 const CarouselBanner = () => {
 	const responsive = {
@@ -36,28 +37,31 @@ const CarouselBanner = () => {
 			arrows={false}
 			infinite={true}
 			autoPlay={true}
-			autoPlaySpeed={3000}
+			autoPlaySpeed={1000}
 		>
-			<div className='h-40 flex items-center justify-center'>
+			<div className='flex h-40 items-center justify-center'>
 				<img className='' src={SponsorCricketImg} alt='Cricket Australia' />
 			</div>
-			<div className='h-40 flex items-center justify-center'>
+			<div className='flex h-40 items-center justify-center'>
 				<img className='' src={SponsorALFImg} alt='AFL' />
 			</div>
-			<div className='h-40 flex items-center justify-center'>
+			<div className='flex h-40 items-center justify-center'>
 				<img className='' src={SponsorTigerImg} alt='Tiger' />
 			</div>
-			<div className='h-40 flex items-center justify-center'>
+			<div className='flex h-40 items-center justify-center'>
 				<img className='' src={SponsorSuperCheapImg} alt='Super Cheap Auto' />
 			</div>
-			<div className='h-40 flex items-center justify-center'>
+			<div className='flex h-40 items-center justify-center'>
 				<img className='' src={SponsorPAImg} alt='PA' />
 			</div>
-			<div className='h-40 flex items-center justify-center'>
+			<div className='flex h-40 items-center justify-center'>
 				<img className='' src={SponsorRabbitImg} alt='Rabbit' />
 			</div>
-			<div className='h-40 flex items-center justify-center'>
+			<div className='flex h-40 items-center justify-center'>
 				<img className='' src={SponsorSydneyImg} alt='Sydney' />
+			</div>
+			<div className='flex h-40 items-center justify-center'>
+				<img className='' src={SponsorNetballImg} alt='Netball' />
 			</div>
 		</Carousel>
 	);
