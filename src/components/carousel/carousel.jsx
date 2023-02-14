@@ -8,6 +8,7 @@ import SponsorSuperCheapImg from '../../assets/sponsor-super-cheap.png';
 import SponsorPAImg from '../../assets/sponsor-pa.png';
 import SponsorRabbitImg from '../../assets/sponsor-rabbit.png';
 import SponsorSydneyImg from '../../assets/sponsor-sydney.png';
+import SponsorNetballImg from '../../assets/sponsor-netball.png';
 
 const CarouselBanner = () => {
 	const responsive = {
@@ -58,6 +59,9 @@ const CarouselBanner = () => {
 			</div>
 			<div className='flex h-40 items-center justify-center'>
 				<img className='' src={SponsorSydneyImg} alt='Sydney' />
+			</div>
+			<div className='flex h-40 items-center justify-center'>
+				<img className='' src={SponsorNetballImg} alt='Netball' />
 			</div>
 		</Carousel>
 	);

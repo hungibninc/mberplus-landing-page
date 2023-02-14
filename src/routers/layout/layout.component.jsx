@@ -46,7 +46,9 @@ const Layout = () => {
 					<LogoContainer onClick={logoHandler}>
 						<Logo />
 					</LogoContainer>
-					<Copyright>Copyright 2023</Copyright>
+					<Copyright>
+						Mber+<sup>®</sup>&nbsp;is a registered trademark
+					</Copyright>
 				</FooterContainer>
 			</Footer>
 		</Fragment>
