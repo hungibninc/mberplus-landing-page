@@ -31,11 +31,11 @@ const Home = () => {
 		shouldAlwaysCompleteAnimation: true,
 	}); */
 	const effMoveFromLeft = useParallax({
-		translateX: ['-500px', '0px'],
+		translateX: ['-800px', '0px'],
 		easing: 'easeOutExpo',
 	});
 	const effMoveFromRight = useParallax({
-		translateX: ['800px', '0px'],
+		translateX: ['500px', '0px'],
 		easing: 'easeOutExpo',
 	});
 	// const effMoveFromTop = useParallax({
