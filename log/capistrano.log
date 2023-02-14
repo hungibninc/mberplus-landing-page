@@ -1355,3 +1355,265 @@ node: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.21' not found (required by nod
  DEBUG [06d0ff2f] 	yarn run v1.22.19
  DEBUG [06d0ff2f] 	error Command "build:preview" not found.
  DEBUG [06d0ff2f] 	info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+  INFO ---------------------------------------------------------------------------
+  INFO START 2023-02-13 21:56:48 -0500 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [87b24291] Running /usr/bin/env mkdir -p /home/staging/tmp as staging@localhost
+ DEBUG [87b24291] Command: /usr/bin/env mkdir -p /home/staging/tmp
+  INFO [87b24291] Finished in 0.387 seconds with exit status 0 (successful).
+ DEBUG Uploading /home/staging/tmp/git-ssh-mberPlus-reactjs-staging-staging.sh 0.0%
+  INFO Uploading /home/staging/tmp/git-ssh-mberPlus-reactjs-staging-staging.sh 100.0%
+  INFO [fc7f2a29] Running /usr/bin/env chmod 700 /home/staging/tmp/git-ssh-mberPlus-reactjs-staging-staging.sh as staging@localhost
+ DEBUG [fc7f2a29] Command: /usr/bin/env chmod 700 /home/staging/tmp/git-ssh-mberPlus-reactjs-staging-staging.sh
+  INFO [fc7f2a29] Finished in 0.334 seconds with exit status 0 (successful).
+  INFO [56b43b51] Running /usr/bin/env git ls-remote ssh://git-codecommit.ap-southeast-2.amazonaws.com/v1/repos/MberPlus-ReactJs HEAD as staging@localhost
+ DEBUG [56b43b51] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/home/staging/tmp/git-ssh-mberPlus-reactjs-staging-staging.sh" ; /usr/bin/env git ls-remote ssh://git-codecommit.ap-southeast-2.amazonaws.com/v1/repos/MberPlus-ReactJs HEAD )
+ DEBUG [56b43b51] 	19ec07001c938302e952c50dbc3d109bf5d91135	HEAD
+  INFO [56b43b51] Finished in 2.240 seconds with exit status 0 (successful).
+  INFO [e553560d] Running /usr/bin/env mkdir -p /home/staging/project/react/mberplus/deploy/shared /home/staging/project/react/mberplus/deploy/releases as staging@localhost
+ DEBUG [e553560d] Command: /usr/bin/env mkdir -p /home/staging/project/react/mberplus/deploy/shared /home/staging/project/react/mberplus/deploy/releases
+  INFO [e553560d] Finished in 0.283 seconds with exit status 0 (successful).
+ DEBUG [6536b203] Running [ -f /home/staging/project/react/mberplus/deploy/current/REVISION ] as staging@localhost
+ DEBUG [6536b203] Command: [ -f /home/staging/project/react/mberplus/deploy/current/REVISION ]
+ DEBUG [6536b203] Finished in 0.317 seconds with exit status 1 (failed).
+ DEBUG [5b77bb25] Running [ -f /home/staging/project/react/mberplus/deploy/repo/HEAD ] as staging@localhost
+ DEBUG [5b77bb25] Command: [ -f /home/staging/project/react/mberplus/deploy/repo/HEAD ]
+ DEBUG [5b77bb25] Finished in 0.329 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/staging/project/react/mberplus/deploy/repo
+ DEBUG [ebf20f9e] Running if test ! -d /home/staging/project/react/mberplus/deploy/repo; then echo "Directory does not exist '/home/staging/project/react/mberplus/deploy/repo'" 1>&2; false; fi as staging@localhost
+ DEBUG [ebf20f9e] Command: if test ! -d /home/staging/project/react/mberplus/deploy/repo; then echo "Directory does not exist '/home/staging/project/react/mberplus/deploy/repo'" 1>&2; false; fi
+ DEBUG [ebf20f9e] Finished in 0.318 seconds with exit status 0 (successful).
+  INFO [22e186cf] Running /usr/bin/env git remote set-url origin ssh://git-codecommit.ap-southeast-2.amazonaws.com/v1/repos/MberPlus-ReactJs as staging@localhost
+ DEBUG [22e186cf] Command: cd /home/staging/project/react/mberplus/deploy/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/home/staging/tmp/git-ssh-mberPlus-reactjs-staging-staging.sh" ; /usr/bin/env git remote set-url origin ssh://git-codecommit.ap-southeast-2.amazonaws.com/v1/repos/MberPlus-ReactJs )
+  INFO [22e186cf] Finished in 0.333 seconds with exit status 0 (successful).
+  INFO [ee26393e] Running /usr/bin/env git remote update --prune as staging@localhost
+ DEBUG [ee26393e] Command: cd /home/staging/project/react/mberplus/deploy/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/home/staging/tmp/git-ssh-mberPlus-reactjs-staging-staging.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [ee26393e] 	remote: 
+ DEBUG [ee26393e] 	remote: Counting objects: 17        
+ DEBUG [ee26393e] 	remote: Counting objects: 17        remote: Counting objects: 17, done.        
+ DEBUG [ee26393e] 	From ssh://git-codecommit.ap-southeast-2.amazonaws.com/v1/repos/MberPlus-ReactJs
+   d9e8d40..19ec070  dev        -> dev
+   d9e8d40..19ec070  preview    -> preview
+  INFO [ee26393e] Finished in 4.726 seconds with exit status 0 (successful).
+ DEBUG [7dca8cbc] Running if test ! -d /home/staging/project/react/mberplus/deploy/repo; then echo "Directory does not exist '/home/staging/project/react/mberplus/deploy/repo'" 1>&2; false; fi as staging@localhost
+ DEBUG [7dca8cbc] Command: if test ! -d /home/staging/project/react/mberplus/deploy/repo; then echo "Directory does not exist '/home/staging/project/react/mberplus/deploy/repo'" 1>&2; false; fi
+ DEBUG [7dca8cbc] Finished in 0.274 seconds with exit status 0 (successful).
+  INFO [3c40b677] Running /usr/bin/env mkdir -p /home/staging/project/react/mberplus/deploy/releases/20230214025652 as staging@localhost
+ DEBUG [3c40b677] Command: cd /home/staging/project/react/mberplus/deploy/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/home/staging/tmp/git-ssh-mberPlus-reactjs-staging-staging.sh" ; /usr/bin/env mkdir -p /home/staging/project/react/mberplus/deploy/releases/20230214025652 )
+  INFO [3c40b677] Finished in 0.349 seconds with exit status 0 (successful).
+  INFO [d69db07b] Running /usr/bin/env git archive preview | /usr/bin/env tar -x -f - -C /home/staging/project/react/mberplus/deploy/releases/20230214025652 as staging@localhost
+ DEBUG [d69db07b] Command: cd /home/staging/project/react/mberplus/deploy/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/home/staging/tmp/git-ssh-mberPlus-reactjs-staging-staging.sh" ; /usr/bin/env git archive preview | /usr/bin/env tar -x -f - -C /home/staging/project/react/mberplus/deploy/releases/20230214025652 )
+  INFO [d69db07b] Finished in 0.363 seconds with exit status 0 (successful).
+ DEBUG [35232109] Running if test ! -d /home/staging/project/react/mberplus/deploy/repo; then echo "Directory does not exist '/home/staging/project/react/mberplus/deploy/repo'" 1>&2; false; fi as staging@localhost
+ DEBUG [35232109] Command: if test ! -d /home/staging/project/react/mberplus/deploy/repo; then echo "Directory does not exist '/home/staging/project/react/mberplus/deploy/repo'" 1>&2; false; fi
+ DEBUG [35232109] Finished in 0.309 seconds with exit status 0 (successful).
+ DEBUG [6302ad9c] Running /usr/bin/env git rev-list --max-count=1 preview as staging@localhost
+ DEBUG [6302ad9c] Command: cd /home/staging/project/react/mberplus/deploy/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/home/staging/tmp/git-ssh-mberPlus-reactjs-staging-staging.sh" ; /usr/bin/env git rev-list --max-count=1 preview )
+ DEBUG [6302ad9c] 	19ec07001c938302e952c50dbc3d109bf5d91135
+ DEBUG [6302ad9c] Finished in 0.341 seconds with exit status 0 (successful).
+ DEBUG [8002acc9] Running if test ! -d /home/staging/project/react/mberplus/deploy/releases/20230214025652; then echo "Directory does not exist '/home/staging/project/react/mberplus/deploy/releases/20230214025652'" 1>&2; false; fi as staging@localhost
+ DEBUG [8002acc9] Command: if test ! -d /home/staging/project/react/mberplus/deploy/releases/20230214025652; then echo "Directory does not exist '/home/staging/project/react/mberplus/deploy/releases/20230214025652'" 1>&2; false; fi
+ DEBUG [8002acc9] Finished in 0.321 seconds with exit status 0 (successful).
+  INFO [76c59814] Running /usr/bin/env echo "19ec07001c938302e952c50dbc3d109bf5d91135" > REVISION as staging@localhost
+ DEBUG [76c59814] Command: cd /home/staging/project/react/mberplus/deploy/releases/20230214025652 && /usr/bin/env echo "19ec07001c938302e952c50dbc3d109bf5d91135" > REVISION
+  INFO [76c59814] Finished in 0.337 seconds with exit status 0 (successful).
+  INFO [548553eb] Running sh -c "cd /home/staging/project/react/mberplus/deploy/releases/20230214025652 && yarn && yarn build:preview" as staging@localhost
+ DEBUG [548553eb] Command: sh -c "cd /home/staging/project/react/mberplus/deploy/releases/20230214025652 && yarn && yarn build:preview"
+ DEBUG [548553eb] 	yarn install v1.22.19
+ DEBUG [548553eb] 	warning package-lock.json found. Your project contains lock files generated by tools other than Yarn. It is advised not to mix package managers in order to avoid resolution inconsistencies caused by unsynchronized lock files. To clear this warning, remove package-lock.json.
+ DEBUG [548553eb] 	[1/4] Resolving packages...
+ DEBUG [548553eb] 	[2/4] Fetching packages...
+ DEBUG [548553eb] 	[3/4] Linking dependencies...
+ DEBUG [548553eb] 	warning " > @testing-library/user-event@13.5.0" has unmet peer dependency "@testing-library/dom@>=7.21.4".
+ DEBUG [548553eb] 	warning "react-scripts > eslint-config-react-app > eslint-plugin-flowtype@8.0.3" has unmet peer dependency "@babel/plugin-syntax-flow@^7.14.5".
+ DEBUG [548553eb] 	warning "react-scripts > eslint-config-react-app > eslint-plugin-flowtype@8.0.3" has unmet peer dependency "@babel/plugin-transform-react-jsx@^7.14.9".
+ DEBUG [548553eb] 	warning "react-scripts > react-dev-utils > fork-ts-checker-webpack-plugin@6.5.2" has unmet peer dependency "typescript@>= 2.7".
+ DEBUG [548553eb] 	warning "react-scripts > eslint-config-react-app > @typescript-eslint/eslint-plugin > tsutils@3.21.0" has unmet peer dependency "typescript@>=2.8.0 || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.6.0-beta || >= 3.7.0-dev || >= 3.7.0-beta".
+ DEBUG [548553eb] 	[4/4] Building fresh packages...
+ DEBUG [548553eb] 	Done in 9.74s.
+ DEBUG [548553eb] 	yarn run v1.22.19
+ DEBUG [548553eb] 	$ yarn build
+ DEBUG [548553eb] 	$ react-scripts build
+ DEBUG [548553eb] 	Creating an optimized production build...
+ DEBUG [548553eb] 	Compiled successfully.
+
+ DEBUG [548553eb] 	File sizes after gzip:
+
+ DEBUG [548553eb] 	  134.76 kB  build/static/js/main.00af8dfc.js
+ DEBUG [548553eb] 	  5.14 kB    build/static/css/main.ce5e89ed.css
+  1.78 kB    build/static/js/787.d1d4a2c2.chunk.js
+ DEBUG [548553eb] 	
+ DEBUG [548553eb] 	The project was built assuming it is hosted at /.
+ DEBUG [548553eb] 	You can control this with the homepage field in your package.json.
+ DEBUG [548553eb] 	
+ DEBUG [548553eb] 	The build folder is ready to be deployed.
+ DEBUG [548553eb] 	You may serve it with a static server:
+ DEBUG [548553eb] 	
+ DEBUG [548553eb] 	  yarn global add serve
+ DEBUG [548553eb] 	  serve -s build
+ DEBUG [548553eb] 	
+ DEBUG [548553eb] 	Find out more about deployment here:
+ DEBUG [548553eb] 	
+ DEBUG [548553eb] 	  https://cra.link/deployment
+ DEBUG [548553eb] 	
+ DEBUG [548553eb] 	Done in 10.04s.
+  INFO [548553eb] Finished in 20.425 seconds with exit status 0 (successful).
+  INFO [16cb422d] Running /usr/bin/env ln -s /home/staging/project/react/mberplus/deploy/releases/20230214025652 /home/staging/project/react/mberplus/deploy/releases/current as staging@localhost
+ DEBUG [16cb422d] Command: /usr/bin/env ln -s /home/staging/project/react/mberplus/deploy/releases/20230214025652 /home/staging/project/react/mberplus/deploy/releases/current
+  INFO [16cb422d] Finished in 0.315 seconds with exit status 0 (successful).
+  INFO [8b3d4ad6] Running /usr/bin/env mv /home/staging/project/react/mberplus/deploy/releases/current /home/staging/project/react/mberplus/deploy as staging@localhost
+ DEBUG [8b3d4ad6] Command: /usr/bin/env mv /home/staging/project/react/mberplus/deploy/releases/current /home/staging/project/react/mberplus/deploy
+  INFO [8b3d4ad6] Finished in 0.353 seconds with exit status 0 (successful).
+ DEBUG [809f8c66] Running /usr/bin/env ls -x /home/staging/project/react/mberplus/deploy/releases as staging@localhost
+ DEBUG [809f8c66] Command: /usr/bin/env ls -x /home/staging/project/react/mberplus/deploy/releases
+ DEBUG [809f8c66] 	20230210051041	20230210_01	20230214020811	20230214021124	20230214021908
+20230214022536	20230214022632	20230214024128	20230214025344	20230214025652
+test
+ DEBUG [809f8c66] Finished in 0.317 seconds with exit status 0 (successful).
+  WARN Skipping cleanup of invalid releases on localhost; unexpected foldername found (should be timestamp)
+  INFO Keeping 2 of 9 deployed releases on localhost
+ DEBUG [1e2caa12] Running [ -d /home/staging/project/react/mberplus/deploy/current ] as staging@localhost
+ DEBUG [1e2caa12] Command: [ -d /home/staging/project/react/mberplus/deploy/current ]
+ DEBUG [1e2caa12] Finished in 0.316 seconds with exit status 0 (successful).
+ DEBUG [425ef309] Running /usr/bin/env readlink /home/staging/project/react/mberplus/deploy/current as staging@localhost
+ DEBUG [425ef309] Command: /usr/bin/env readlink /home/staging/project/react/mberplus/deploy/current
+ DEBUG [425ef309] 	/home/staging/project/react/mberplus/deploy/releases/20230214025652
+ DEBUG [425ef309] Finished in 0.329 seconds with exit status 0 (successful).
+  INFO [163116f4] Running /usr/bin/env rm -rf /home/staging/project/react/mberplus/deploy/releases/20230210051041 /home/staging/project/react/mberplus/deploy/releases/20230214020811 /home/staging/project/react/mberplus/deploy/releases/20230214021124 /home/staging/project/react/mberplus/deploy/releases/20230214021908 /home/staging/project/react/mberplus/deploy/releases/20230214022536 /home/staging/project/react/mberplus/deploy/releases/20230214022632 /home/staging/project/react/mberplus/deploy/releases/20230214024128 as staging@localhost
+ DEBUG [163116f4] Command: /usr/bin/env rm -rf /home/staging/project/react/mberplus/deploy/releases/20230210051041 /home/staging/project/react/mberplus/deploy/releases/20230214020811 /home/staging/project/react/mberplus/deploy/releases/20230214021124 /home/staging/project/react/mberplus/deploy/releases/20230214021908 /home/staging/project/react/mberplus/deploy/releases/20230214022536 /home/staging/project/react/mberplus/deploy/releases/20230214022632 /home/staging/project/react/mberplus/deploy/releases/20230214024128
+  INFO [163116f4] Finished in 0.348 seconds with exit status 0 (successful).
+ DEBUG [2d2023e6] Running if test ! -d /home/staging/project/react/mberplus/deploy/releases; then echo "Directory does not exist '/home/staging/project/react/mberplus/deploy/releases'" 1>&2; false; fi as staging@localhost
+ DEBUG [2d2023e6] Command: if test ! -d /home/staging/project/react/mberplus/deploy/releases; then echo "Directory does not exist '/home/staging/project/react/mberplus/deploy/releases'" 1>&2; false; fi
+ DEBUG [2d2023e6] Finished in 0.331 seconds with exit status 0 (successful).
+  INFO [13489d2e] Running /usr/bin/env echo "Branch preview (at 19ec07001c938302e952c50dbc3d109bf5d91135) deployed as release 20230214025652 by staging" >> /home/staging/project/react/mberplus/deploy/revisions.log as staging@localhost
+ DEBUG [13489d2e] Command: cd /home/staging/project/react/mberplus/deploy/releases && /usr/bin/env echo "Branch preview (at 19ec07001c938302e952c50dbc3d109bf5d91135) deployed as release 20230214025652 by staging" >> /home/staging/project/react/mberplus/deploy/revisions.log
+  INFO [13489d2e] Finished in 0.348 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2023-02-14 00:00:50 -0500 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [221e44de] Running /usr/bin/env mkdir -p /home/staging/tmp as staging@localhost
+ DEBUG [221e44de] Command: /usr/bin/env mkdir -p /home/staging/tmp
+  INFO [221e44de] Finished in 0.394 seconds with exit status 0 (successful).
+ DEBUG Uploading /home/staging/tmp/git-ssh-mberPlus-reactjs-staging-staging.sh 0.0%
+  INFO Uploading /home/staging/tmp/git-ssh-mberPlus-reactjs-staging-staging.sh 100.0%
+  INFO [cece61df] Running /usr/bin/env chmod 700 /home/staging/tmp/git-ssh-mberPlus-reactjs-staging-staging.sh as staging@localhost
+ DEBUG [cece61df] Command: /usr/bin/env chmod 700 /home/staging/tmp/git-ssh-mberPlus-reactjs-staging-staging.sh
+  INFO [cece61df] Finished in 0.315 seconds with exit status 0 (successful).
+  INFO [36357668] Running /usr/bin/env git ls-remote ssh://git-codecommit.ap-southeast-2.amazonaws.com/v1/repos/MberPlus-ReactJs HEAD as staging@localhost
+ DEBUG [36357668] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/home/staging/tmp/git-ssh-mberPlus-reactjs-staging-staging.sh" ; /usr/bin/env git ls-remote ssh://git-codecommit.ap-southeast-2.amazonaws.com/v1/repos/MberPlus-ReactJs HEAD )
+ DEBUG [36357668] 	19ec07001c938302e952c50dbc3d109bf5d91135	HEAD
+  INFO [36357668] Finished in 2.378 seconds with exit status 0 (successful).
+  INFO [07b622d9] Running /usr/bin/env mkdir -p /home/staging/project/react/mberplus/deploy/shared /home/staging/project/react/mberplus/deploy/releases as staging@localhost
+ DEBUG [07b622d9] Command: /usr/bin/env mkdir -p /home/staging/project/react/mberplus/deploy/shared /home/staging/project/react/mberplus/deploy/releases
+  INFO [07b622d9] Finished in 0.288 seconds with exit status 0 (successful).
+ DEBUG [939d2377] Running [ -f /home/staging/project/react/mberplus/deploy/current/REVISION ] as staging@localhost
+ DEBUG [939d2377] Command: [ -f /home/staging/project/react/mberplus/deploy/current/REVISION ]
+ DEBUG [939d2377] Finished in 0.305 seconds with exit status 0 (successful).
+ DEBUG [9668261f] Running /usr/bin/env cat /home/staging/project/react/mberplus/deploy/current/REVISION 2>/dev/null as staging@localhost
+ DEBUG [9668261f] Command: /usr/bin/env cat /home/staging/project/react/mberplus/deploy/current/REVISION 2>/dev/null
+ DEBUG [9668261f] 	19ec07001c938302e952c50dbc3d109bf5d91135
+ DEBUG [9668261f] Finished in 0.369 seconds with exit status 0 (successful).
+ DEBUG [92e79d04] Running [ -f /home/staging/project/react/mberplus/deploy/repo/HEAD ] as staging@localhost
+ DEBUG [92e79d04] Command: [ -f /home/staging/project/react/mberplus/deploy/repo/HEAD ]
+ DEBUG [92e79d04] Finished in 0.341 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/staging/project/react/mberplus/deploy/repo
+ DEBUG [4d8b2ef0] Running if test ! -d /home/staging/project/react/mberplus/deploy/repo; then echo "Directory does not exist '/home/staging/project/react/mberplus/deploy/repo'" 1>&2; false; fi as staging@localhost
+ DEBUG [4d8b2ef0] Command: if test ! -d /home/staging/project/react/mberplus/deploy/repo; then echo "Directory does not exist '/home/staging/project/react/mberplus/deploy/repo'" 1>&2; false; fi
+ DEBUG [4d8b2ef0] Finished in 0.332 seconds with exit status 0 (successful).
+  INFO [d859750a] Running /usr/bin/env git remote set-url origin ssh://git-codecommit.ap-southeast-2.amazonaws.com/v1/repos/MberPlus-ReactJs as staging@localhost
+ DEBUG [d859750a] Command: cd /home/staging/project/react/mberplus/deploy/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/home/staging/tmp/git-ssh-mberPlus-reactjs-staging-staging.sh" ; /usr/bin/env git remote set-url origin ssh://git-codecommit.ap-southeast-2.amazonaws.com/v1/repos/MberPlus-ReactJs )
+  INFO [d859750a] Finished in 0.319 seconds with exit status 0 (successful).
+  INFO [b3451985] Running /usr/bin/env git remote update --prune as staging@localhost
+ DEBUG [b3451985] Command: cd /home/staging/project/react/mberplus/deploy/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/home/staging/tmp/git-ssh-mberPlus-reactjs-staging-staging.sh" ; /usr/bin/env git remote update --prune )
+  INFO [b3451985] Finished in 2.312 seconds with exit status 0 (successful).
+ DEBUG [857bb1e4] Running if test ! -d /home/staging/project/react/mberplus/deploy/repo; then echo "Directory does not exist '/home/staging/project/react/mberplus/deploy/repo'" 1>&2; false; fi as staging@localhost
+ DEBUG [857bb1e4] Command: if test ! -d /home/staging/project/react/mberplus/deploy/repo; then echo "Directory does not exist '/home/staging/project/react/mberplus/deploy/repo'" 1>&2; false; fi
+ DEBUG [857bb1e4] Finished in 0.316 seconds with exit status 0 (successful).
+  INFO [4e0f9cc6] Running /usr/bin/env mkdir -p /home/staging/project/react/mberplus/deploy/releases/20230214050054 as staging@localhost
+ DEBUG [4e0f9cc6] Command: cd /home/staging/project/react/mberplus/deploy/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/home/staging/tmp/git-ssh-mberPlus-reactjs-staging-staging.sh" ; /usr/bin/env mkdir -p /home/staging/project/react/mberplus/deploy/releases/20230214050054 )
+  INFO [4e0f9cc6] Finished in 0.374 seconds with exit status 0 (successful).
+  INFO [0599f51a] Running /usr/bin/env git archive preview | /usr/bin/env tar -x -f - -C /home/staging/project/react/mberplus/deploy/releases/20230214050054 as staging@localhost
+ DEBUG [0599f51a] Command: cd /home/staging/project/react/mberplus/deploy/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/home/staging/tmp/git-ssh-mberPlus-reactjs-staging-staging.sh" ; /usr/bin/env git archive preview | /usr/bin/env tar -x -f - -C /home/staging/project/react/mberplus/deploy/releases/20230214050054 )
+  INFO [0599f51a] Finished in 0.358 seconds with exit status 0 (successful).
+ DEBUG [e41fe604] Running if test ! -d /home/staging/project/react/mberplus/deploy/repo; then echo "Directory does not exist '/home/staging/project/react/mberplus/deploy/repo'" 1>&2; false; fi as staging@localhost
+ DEBUG [e41fe604] Command: if test ! -d /home/staging/project/react/mberplus/deploy/repo; then echo "Directory does not exist '/home/staging/project/react/mberplus/deploy/repo'" 1>&2; false; fi
+ DEBUG [e41fe604] Finished in 0.311 seconds with exit status 0 (successful).
+ DEBUG [6e891120] Running /usr/bin/env git rev-list --max-count=1 preview as staging@localhost
+ DEBUG [6e891120] Command: cd /home/staging/project/react/mberplus/deploy/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/home/staging/tmp/git-ssh-mberPlus-reactjs-staging-staging.sh" ; /usr/bin/env git rev-list --max-count=1 preview )
+ DEBUG [6e891120] 	19ec07001c938302e952c50dbc3d109bf5d91135
+ DEBUG [6e891120] Finished in 0.336 seconds with exit status 0 (successful).
+ DEBUG [80b74034] Running if test ! -d /home/staging/project/react/mberplus/deploy/releases/20230214050054; then echo "Directory does not exist '/home/staging/project/react/mberplus/deploy/releases/20230214050054'" 1>&2; false; fi as staging@localhost
+ DEBUG [80b74034] Command: if test ! -d /home/staging/project/react/mberplus/deploy/releases/20230214050054; then echo "Directory does not exist '/home/staging/project/react/mberplus/deploy/releases/20230214050054'" 1>&2; false; fi
+ DEBUG [80b74034] Finished in 0.347 seconds with exit status 0 (successful).
+  INFO [d201bf92] Running /usr/bin/env echo "19ec07001c938302e952c50dbc3d109bf5d91135" > REVISION as staging@localhost
+ DEBUG [d201bf92] Command: cd /home/staging/project/react/mberplus/deploy/releases/20230214050054 && /usr/bin/env echo "19ec07001c938302e952c50dbc3d109bf5d91135" > REVISION
+  INFO [d201bf92] Finished in 0.336 seconds with exit status 0 (successful).
+  INFO [6ab339e0] Running sh -c "cd /home/staging/project/react/mberplus/deploy/releases/20230214050054 && yarn && yarn build:preview" as staging@localhost
+ DEBUG [6ab339e0] Command: sh -c "cd /home/staging/project/react/mberplus/deploy/releases/20230214050054 && yarn && yarn build:preview"
+ DEBUG [6ab339e0] 	yarn install v1.22.19
+ DEBUG [6ab339e0] 	warning package-lock.json found. Your project contains lock files generated by tools other than Yarn. It is advised not to mix package managers in order to avoid resolution inconsistencies caused by unsynchronized lock files. To clear this warning, remove package-lock.json.
+ DEBUG [6ab339e0] 	[1/4] Resolving packages...
+ DEBUG [6ab339e0] 	[2/4] Fetching packages...
+ DEBUG [6ab339e0] 	[3/4] Linking dependencies...
+ DEBUG [6ab339e0] 	warning " > @testing-library/user-event@13.5.0" has unmet peer dependency "@testing-library/dom@>=7.21.4".
+ DEBUG [6ab339e0] 	warning "react-scripts > eslint-config-react-app > eslint-plugin-flowtype@8.0.3" has unmet peer dependency "@babel/plugin-syntax-flow@^7.14.5".
+ DEBUG [6ab339e0] 	warning "react-scripts > eslint-config-react-app > eslint-plugin-flowtype@8.0.3" has unmet peer dependency "@babel/plugin-transform-react-jsx@^7.14.9".
+ DEBUG [6ab339e0] 	warning "react-scripts > react-dev-utils > fork-ts-checker-webpack-plugin@6.5.2" has unmet peer dependency "typescript@>= 2.7".
+ DEBUG [6ab339e0] 	warning "react-scripts > eslint-config-react-app > @typescript-eslint/eslint-plugin > tsutils@3.21.0" has unmet peer dependency "typescript@>=2.8.0 || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.6.0-beta || >= 3.7.0-dev || >= 3.7.0-beta".
+ DEBUG [6ab339e0] 	[4/4] Building fresh packages...
+ DEBUG [6ab339e0] 	Done in 8.70s.
+ DEBUG [6ab339e0] 	yarn run v1.22.19
+ DEBUG [6ab339e0] 	$ yarn build
+ DEBUG [6ab339e0] 	$ react-scripts build
+ DEBUG [6ab339e0] 	Creating an optimized production build...
+ DEBUG [6ab339e0] 	Compiled successfully.
+
+ DEBUG [6ab339e0] 	File sizes after gzip:
+
+ DEBUG [6ab339e0] 	  134.76 kB  build/static/js/main.00af8dfc.js
+ DEBUG [6ab339e0] 	  5.14 kB    build/static/css/main.ce5e89ed.css
+ DEBUG [6ab339e0] 	  1.78 kB    build/static/js/787.d1d4a2c2.chunk.js
+
+ DEBUG [6ab339e0] 	The project was built assuming it is hosted at /.
+ DEBUG [6ab339e0] 	You can control this with the homepage field in your package.json.
+ DEBUG [6ab339e0] 	
+ DEBUG [6ab339e0] 	The build folder is ready to be deployed.
+ DEBUG [6ab339e0] 	You may serve it with a static server:
+ DEBUG [6ab339e0] 	
+ DEBUG [6ab339e0] 	  yarn global add serve
+ DEBUG [6ab339e0] 	  serve -s build
+ DEBUG [6ab339e0] 	
+ DEBUG [6ab339e0] 	Find out more about deployment here:
+ DEBUG [6ab339e0] 	
+ DEBUG [6ab339e0] 	  https://cra.link/deployment
+ DEBUG [6ab339e0] 	
+ DEBUG [6ab339e0] 	Done in 10.42s.
+  INFO [6ab339e0] Finished in 19.753 seconds with exit status 0 (successful).
+  INFO [fd38cf55] Running /usr/bin/env ln -s /home/staging/project/react/mberplus/deploy/releases/20230214050054 /home/staging/project/react/mberplus/deploy/releases/current as staging@localhost
+ DEBUG [fd38cf55] Command: /usr/bin/env ln -s /home/staging/project/react/mberplus/deploy/releases/20230214050054 /home/staging/project/react/mberplus/deploy/releases/current
+  INFO [fd38cf55] Finished in 0.359 seconds with exit status 0 (successful).
+  INFO [e2ac5be7] Running /usr/bin/env mv /home/staging/project/react/mberplus/deploy/releases/current /home/staging/project/react/mberplus/deploy as staging@localhost
+ DEBUG [e2ac5be7] Command: /usr/bin/env mv /home/staging/project/react/mberplus/deploy/releases/current /home/staging/project/react/mberplus/deploy
+  INFO [e2ac5be7] Finished in 0.357 seconds with exit status 0 (successful).
+ DEBUG [2680bb02] Running /usr/bin/env ls -x /home/staging/project/react/mberplus/deploy/releases as staging@localhost
+ DEBUG [2680bb02] Command: /usr/bin/env ls -x /home/staging/project/react/mberplus/deploy/releases
+ DEBUG [2680bb02] 	20230210_01  20230214025344  20230214025652  20230214050054  test
+ DEBUG [2680bb02] Finished in 0.357 seconds with exit status 0 (successful).
+  WARN Skipping cleanup of invalid releases on localhost; unexpected foldername found (should be timestamp)
+  INFO Keeping 2 of 3 deployed releases on localhost
+ DEBUG [f01aadab] Running [ -d /home/staging/project/react/mberplus/deploy/current ] as staging@localhost
+ DEBUG [f01aadab] Command: [ -d /home/staging/project/react/mberplus/deploy/current ]
+ DEBUG [f01aadab] Finished in 0.331 seconds with exit status 0 (successful).
+ DEBUG [c07964c7] Running /usr/bin/env readlink /home/staging/project/react/mberplus/deploy/current as staging@localhost
+ DEBUG [c07964c7] Command: /usr/bin/env readlink /home/staging/project/react/mberplus/deploy/current
+ DEBUG [c07964c7] 	/home/staging/project/react/mberplus/deploy/releases/20230214050054
+ DEBUG [c07964c7] Finished in 0.354 seconds with exit status 0 (successful).
+  INFO [78d4a984] Running /usr/bin/env rm -rf /home/staging/project/react/mberplus/deploy/releases/20230214025344 as staging@localhost
+ DEBUG [78d4a984] Command: /usr/bin/env rm -rf /home/staging/project/react/mberplus/deploy/releases/20230214025344
+  INFO [78d4a984] Finished in 1.254 seconds with exit status 0 (successful).
+ DEBUG [bf2b2032] Running if test ! -d /home/staging/project/react/mberplus/deploy/releases; then echo "Directory does not exist '/home/staging/project/react/mberplus/deploy/releases'" 1>&2; false; fi as staging@localhost
+ DEBUG [bf2b2032] Command: if test ! -d /home/staging/project/react/mberplus/deploy/releases; then echo "Directory does not exist '/home/staging/project/react/mberplus/deploy/releases'" 1>&2; false; fi
+ DEBUG [bf2b2032] Finished in 0.360 seconds with exit status 0 (successful).
+  INFO [c7a58b47] Running /usr/bin/env echo "Branch preview (at 19ec07001c938302e952c50dbc3d109bf5d91135) deployed as release 20230214050054 by staging" >> /home/staging/project/react/mberplus/deploy/revisions.log as staging@localhost
+ DEBUG [c7a58b47] Command: cd /home/staging/project/react/mberplus/deploy/releases && /usr/bin/env echo "Branch preview (at 19ec07001c938302e952c50dbc3d109bf5d91135) deployed as release 20230214050054 by staging" >> /home/staging/project/react/mberplus/deploy/revisions.log
+  INFO [c7a58b47] Finished in 0.355 seconds with exit status 0 (successful).
