@@ -146,11 +146,7 @@ const Home = () => {
 							className='Gotham-Black order-first flex flex-col justify-center pb-10 pl-0 text-center text-24-26-c font-medium uppercase text-white md:order-none md:pb-0 md:pl-16 md:text-left xl:text-48-52-c'
 							ref={effMoveFromBottom.ref}
 						>
-							<p className='text-primary'>
-								We Supply
-								<br />
-								The Product
-							</p>
+							<p className='text-primary'>The Product</p>
 							NO STOCK RISK
 						</div>
 					</div>
