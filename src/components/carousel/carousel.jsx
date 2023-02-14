@@ -9,6 +9,14 @@ import SponsorPAImg from '../../assets/sponsor-pa.png';
 import SponsorRabbitImg from '../../assets/sponsor-rabbit.png';
 import SponsorSydneyImg from '../../assets/sponsor-sydney.png';
 import SponsorNetballImg from '../../assets/sponsor-netball.png';
+import SponsorAuskickImg from '../../assets/sponsor-auskick.png';
+import SponsorTigersImg from '../../assets/sponsor-tigers.png';
+import SponsorWaratahsImg from '../../assets/sponsor-waratahs.png';
+import SponsorBulldogsImg from '../../assets/sponsor-bulldogs.png';
+import SponsorRedsImg from '../../assets/sponsor-reds.png';
+import SponsorRebelsImg from '../../assets/sponsor-rebels.png';
+import SponsorMarinersImg from '../../assets/sponsor-mariners.png';
+import SponsorSharksImg from '../../assets/sponsor-sharks.png';
 
 const CarouselBanner = () => {
 	const responsive = {
@@ -62,6 +70,30 @@ const CarouselBanner = () => {
 			</div>
 			<div className='flex h-40 items-center justify-center'>
 				<img className='' src={SponsorNetballImg} alt='Netball' />
+			</div>
+			<div className='flex h-40 items-center justify-center'>
+				<img className='' src={SponsorAuskickImg} alt='Auskick' />
+			</div>
+			<div className='flex h-40 items-center justify-center'>
+				<img className='' src={SponsorTigersImg} alt='Tigers' />
+			</div>
+			<div className='flex h-40 items-center justify-center'>
+				<img className='' src={SponsorWaratahsImg} alt='Waratahs' />
+			</div>
+			<div className='flex h-40 items-center justify-center'>
+				<img className='' src={SponsorBulldogsImg} alt='Bulldogs' />
+			</div>
+			<div className='flex h-40 items-center justify-center'>
+				<img className='' src={SponsorRedsImg} alt='Reds' />
+			</div>
+			<div className='flex h-40 items-center justify-center'>
+				<img className='' src={SponsorRebelsImg} alt='Rebels' />
+			</div>
+			<div className='flex h-40 items-center justify-center'>
+				<img className='' src={SponsorMarinersImg} alt='Mariners' />
+			</div>
+			<div className='flex h-40 items-center justify-center'>
+				<img className='' src={SponsorSharksImg} alt='Sharks' />
 			</div>
 		</Carousel>
 	);

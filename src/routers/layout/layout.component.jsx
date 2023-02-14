@@ -11,6 +11,7 @@ import {
 	NavLink,
 	Footer,
 	FooterContainer,
+	LogoFooter,
 	Copyright,
 } from './layout.styles';
 
@@ -44,7 +45,7 @@ const Layout = () => {
 			<Footer>
 				<FooterContainer>
 					<LogoContainer onClick={logoHandler}>
-						<Logo />
+						<LogoFooter />
 					</LogoContainer>
 					<Copyright>
 						Mber+<sup>®</sup>&nbsp;is a registered trademark

@@ -1,6 +1,7 @@
 import tw from 'tailwind-styled-components';
 import { Link } from 'react-router-dom';
 import { ReactComponent as LogoSvg } from '../../assets/logo.svg';
+import LogoFooterImg from '../../assets/logo-footer.png';
 
 export const Header = tw.div`
   bg-black
@@ -40,13 +41,23 @@ bg-black
 export const FooterContainer = tw.div`
   container
   flex
-  flex-row
+  flex-col
+  md:flex-row
   justify-between
   py-5
 `;
+
+export const LogoFooter = tw.img`
+  h-12
+`;
+LogoFooter.defaultProps = {
+	src: LogoFooterImg,
+};
 
 export const Copyright = tw.div`
   flex
   items-center
   text-[#94A3B7]
+  pt-2
+  md:pt-0
 `;
