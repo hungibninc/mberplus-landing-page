@@ -12,7 +12,7 @@ const MainBanner = () => {
 		setShowModal(true);
 	};
 	return (
-		<section className='bg-black py-8 lg:bg-transparent lg:bg-[url("../assets/banner-bg.jpg")] xl:pt-16'>
+		<section className='bg-black py-8 lg:bg-transparent lg:bg-[url("../../assets/banner-bg.jpg")] xl:pt-16'>
 			<div className='container flex flex-col gap-y-12 lg:flex-row lg:justify-between'>
 				<div className='space-y-8 lg:animate-banner-desc'>
 					<h3 className='text-32-36-c text-white lg:text-xl xl:text-38-50-c'>

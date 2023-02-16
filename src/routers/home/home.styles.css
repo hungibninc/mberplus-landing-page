@@ -1,0 +1,82 @@
+#eaYSWl59rqw2_ts {
+	animation: eaYSWl59rqw2_ts__ts 3000ms linear infinite normal forwards;
+}
+@keyframes eaYSWl59rqw2_ts__ts {
+	0% {
+		transform: translate(210.5px, 182.410004px) scale(1, 1);
+		animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+	}
+	60% {
+		transform: translate(210.5px, 182.410004px) scale(1.1, 1.1);
+		animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+	}
+	100% {
+		transform: translate(210.5px, 182.410004px) scale(1, 1);
+	}
+}
+
+#e2h89vMfDZg16_to {
+	animation: e2h89vMfDZg16_to__to 4000ms linear infinite normal forwards;
+}
+@keyframes e2h89vMfDZg16_to__to {
+	0% {
+		transform: translate(148.321752px, 105.362699px);
+		animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+	}
+	50% {
+		transform: translate(148.321752px, 97.362699px);
+		animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+	}
+	100% {
+		transform: translate(148.321752px, 105.362699px);
+	}
+}
+
+#elzMGLWUXv011_to {
+	animation: elzMGLWUXv011_to__to 3000ms linear infinite normal forwards;
+}
+@keyframes elzMGLWUXv011_to__to {
+	0% {
+		transform: translate(50.795975px, 174.67273px);
+		animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+	}
+	50% {
+		transform: translate(55.795975px, 179.67273px);
+		animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+	}
+	100% {
+		transform: translate(50.795975px, 174.67273px);
+	}
+}
+#elzMGLWUXv011_tr {
+	animation: elzMGLWUXv011_tr__tr 3000ms linear infinite normal forwards;
+}
+@keyframes elzMGLWUXv011_tr__tr {
+	0% {
+		transform: rotate(0deg);
+		animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+	}
+	50% {
+		transform: rotate(20deg);
+		animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+#elzMGLWUXv011_ts {
+	animation: elzMGLWUXv011_ts__ts 3000ms linear infinite normal forwards;
+}
+@keyframes elzMGLWUXv011_ts__ts {
+	0% {
+		transform: scale(1, 1);
+		animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+	}
+	50% {
+		transform: scale(1.2, 1.2);
+		animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+	}
+	100% {
+		transform: scale(1, 1);
+	}
+}

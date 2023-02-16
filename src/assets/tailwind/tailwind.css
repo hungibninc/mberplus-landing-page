@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	@font-face {
+		font-family: 'Gotham-Black';
+		src: url('../fonts/Gotham/Gotham-Black.ttf');
+	}
+	@font-face {
+		font-family: 'Gotham-Book';
+		src: url('../fonts/Gotham/Gotham-Book.ttf');
+	}
+	@font-face {
+		font-family: 'Gotham-Medium';
+		src: url('../fonts/Gotham/Gotham-Medium.ttf');
+	}
+
+	.Gotham-Black {
+		font-family: Gotham-Black;
+	}
+	.Gotham-Book {
+		font-family: Gotham-Book;
+	}
+	.Gotham-Medium {
+		font-family: Gotham-Medium;
+	}
+
+	body {
+		@apply Gotham-Book text-lg font-normal text-slate-600;
+	}
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	strong {
+		@apply Gotham-Medium font-bold;
+	}
+}
+
+@layer components {
+	.container {
+		@apply mx-auto max-w-7xl px-5;
+	}
+}
+
+@layer utilities {
+	.box-bg-1 {
+		@apply rounded-lg border border-solid border-slate-200 bg-gray;
+	}
+	.box-bg-2 {
+		@apply rounded-lg border border-solid border-slate-200 shadow-[0_16px_32px_rgba(196,218,241,0.25)];
+	}
+	.readmore {
+		@apply rounded rounded-md bg-slate-100 py-2 px-8 text-14-28-c uppercase text-slate-900 hover:bg-slate-200 focus:bg-slate-200 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-slate-300;
+	}
+	.shine-box-1 {
+		@apply absolute -inset-full top-0 z-10 block h-full w-1/2 -skew-x-12 transform bg-gradient-to-r from-transparent to-green-200 opacity-40 group-hover:animate-shine;
+	}
+}

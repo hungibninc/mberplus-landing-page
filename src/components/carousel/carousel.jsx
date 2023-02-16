@@ -17,6 +17,9 @@ import SponsorRedsImg from '../../assets/sponsor-reds.png';
 import SponsorRebelsImg from '../../assets/sponsor-rebels.png';
 import SponsorMarinersImg from '../../assets/sponsor-mariners.png';
 import SponsorSharksImg from '../../assets/sponsor-sharks.png';
+import SponsorCricketBlastImg from '../../assets/sponsor-cricket-blast.png';
+import SponsorNrlImg from '../../assets/sponsor-nrl.png';
+import SponsorRugbyauImg from '../../assets/sponsor-rugbyau.png';
 
 const CarouselBanner = () => {
 	const responsive = {
@@ -94,6 +97,15 @@ const CarouselBanner = () => {
 			</div>
 			<div className='flex h-40 items-center justify-center'>
 				<img className='' src={SponsorSharksImg} alt='Sharks' />
+			</div>
+			<div className='flex h-40 items-center justify-center'>
+				<img className='' src={SponsorCricketBlastImg} alt='Cricket Blast' />
+			</div>
+			<div className='flex h-40 items-center justify-center'>
+				<img className='' src={SponsorNrlImg} alt='NRL' />
+			</div>
+			<div className='flex h-40 items-center justify-center'>
+				<img className='' src={SponsorRugbyauImg} alt='Rugby AU' />
 			</div>
 		</Carousel>
 	);

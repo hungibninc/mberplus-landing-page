@@ -6,9 +6,9 @@ import RewardLoyaltyMultiplicationImg from '../../assets/reward-loyalty-multipli
 import RewardLoyaltyMultiplicationWhiteImg from '../../assets/reward-loyalty-multiplication-white.png';
 import RewardLoyaltyPlusImg from '../../assets/reward-loyalty-plus.png';
 import { ReactComponent as TwitterIco } from '../../assets/ico-twitter.svg';
-import PowerWhatIsImg from '../../assets/power-what-is.png';
-import PowerOfferImg from '../../assets/power-offer.png';
-import PowerDeliveryImg from '../../assets/power-delivery.png';
+import { ReactComponent as PowerOfferSvg } from '../../assets/power-offer.svg';
+import { ReactComponent as PowerWhatIsSvg } from '../../assets/power-what-is.svg';
+import { ReactComponent as PowerDeliverySvg } from '../../assets/power-delivery.svg';
 import SupplyProductBgImg from '../../assets/supply-product-bg.png';
 import SupplyProductSpinImg from '../../assets/supply-product-spin.png';
 import IntuitiveDataImg from '../../assets/intuitive-data.png';
@@ -20,8 +20,13 @@ import ClientWpRaskellImg from '../../assets/client-wp-raskell.jpg';
 import CarouselBanner from '../../components/carousel/carousel';
 import MainBanner from '../../components/main-banner/main-banner.component';
 import { useParallax } from 'react-scroll-parallax';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+import './home.styles.css';
 
 const Home = () => {
+	AOS.init();
+
 	/* const effETest = useParallax({
 		scale: [1, 1, 'easeOutExpo'],
 		translateY: ['300px', '0px'],
@@ -77,11 +82,7 @@ const Home = () => {
 					</div>
 					<div className='grid gap-x-6 pt-12 md:grid-cols-3'>
 						<div className='box-bg-1 group relative mb-5 gap-y-8 overflow-hidden p-30px-c lg:mb-0'>
-							<img
-								className='mx-auto'
-								src={PowerWhatIsImg}
-								alt='Power What Is'
-							/>
+							<PowerOfferSvg className='h-256 mx-auto w-257c' />
 							<h5 className='Gotham-Black mt-8 text-24-32-c font-black text-primary-semibold'>
 								What can it offer
 							</h5>
@@ -95,7 +96,7 @@ const Home = () => {
 							<div className='shine-box-1' />
 						</div>
 						<div className='box-bg-1 group relative mb-5 gap-y-8 overflow-hidden p-30px-c lg:mb-0'>
-							<img className='mx-auto' src={PowerOfferImg} alt='Power Offer' />
+							<PowerWhatIsSvg className='h-256 mx-auto w-257c' />
 							<h5 className='Gotham-Black mt-8 text-24-32-c font-black text-primary-semibold'>
 								What is Mber+™
 							</h5>
@@ -108,11 +109,7 @@ const Home = () => {
 							<div className='shine-box-1' />
 						</div>
 						<div className='box-bg-1 group relative mb-5 gap-y-8 overflow-hidden p-30px-c lg:mb-0'>
-							<img
-								className='mx-auto'
-								src={PowerDeliveryImg}
-								alt='Power Delivery'
-							/>
+							<PowerDeliverySvg className='h-256 mx-auto w-257c' />
 							<h5 className='Gotham-Black mt-8 text-24-32-c font-black text-primary-semibold'>
 								How is it delivered
 							</h5>
@@ -171,14 +168,20 @@ const Home = () => {
 								</p>
 							</div>
 							<div className='flex flex-col flex-nowrap gap-25c pt-11 xl:flex-row'>
-								<div className='box-bg-1 w-full justify-items-center p-4 text-22-30-c text-slate-700 xl:w-1/2'>
+								<div
+									className='box-bg-1 w-full justify-items-center p-4 text-22-30-c text-slate-700 xl:w-1/2'
+									data-aos='fade-right'
+								>
 									Loyal customers spend 
 									<span className='Gotham-Black text-primary-semibold'>
 										67%
 									</span>
 									 more than new ones
 								</div>
-								<div className='box-bg-1 w-full p-4 text-22-30-c text-slate-700 xl:w-1/2'>
+								<div
+									className='box-bg-1 w-full p-4 text-22-30-c text-slate-700 xl:w-1/2'
+									data-aos='fade-down'
+								>
 									On average{' '}
 									<span className='Gotham-Black text-primary-semibold'>
 										65%
@@ -187,7 +190,10 @@ const Home = () => {
 								</div>
 							</div>
 							<div className='flex flex-col flex-nowrap gap-25c pt-25c xl:flex-row'>
-								<div className='box-bg-1 w-full p-4 text-22-30-c text-slate-700 xl:w-55%c'>
+								<div
+									className='box-bg-1 w-full p-4 text-22-30-c text-slate-700 xl:w-55%c'
+									data-aos='fade-up'
+								>
 									Increasing customer retention by{' '}
 									<span className='Gotham-Black text-primary-semibold'>5%</span>{' '}
 									increases profits by{' '}
@@ -195,7 +201,10 @@ const Home = () => {
 										an average of up to 60%
 									</span>
 								</div>
-								<div className='box-bg-1 w-full p-4 text-22-30-c text-slate-700 xl:w-45%c'>
+								<div
+									className='box-bg-1 w-full p-4 text-22-30-c text-slate-700 xl:w-45%c'
+									data-aos='fade-left'
+								>
 									It costs up to{' '}
 									<span className='Gotham-Black text-primary-semibold'>7x</span>{' '}
 									more to acquire a new customer than to retain an old one.
@@ -245,10 +254,16 @@ const Home = () => {
 							alt='Intuitive Data'
 						/>
 						<div className='order-first flex flex-col justify-center pb-10 pl-0 text-center md:order-none md:pb-0 md:pl-16 md:text-left'>
-							<p className='Gotham-Black text-24-26-c font-medium text-primary xl:text-36-40-c'>
+							<p
+								className='Gotham-Black text-24-26-c font-medium text-primary xl:text-36-40-c'
+								data-aos='flip-up'
+							>
 								Intuitive Data Driven Analysis
 							</p>
-							<p className='pt-2 leading-6 text-white text-slate-300'>
+							<p
+								className='pt-2 leading-6 text-white text-slate-300'
+								data-aos='flip-down'
+							>
 								Powerful data driven analytics to help you scale operations,
 								delivering the rewards your customers want.
 							</p>
@@ -270,7 +285,7 @@ const Home = () => {
 
 					<div className='grid gap-8 pt-16 md:grid-cols-2'>
 						<div className='flex flex-col gap-8'>
-							<div className='box-bg-2 space-y-8 p-30px-c'>
+							<div className='box-bg-2 space-y-8 p-30px-c' data-aos='fade-up'>
 								<figcaption className='relative flex items-center space-x-3'>
 									<Link
 										className='absolute top-0 right-0'
@@ -318,7 +333,7 @@ const Home = () => {
 								</button>
 							</div>
 
-							<div className='box-bg-2 space-y-8 p-30px-c'>
+							<div className='box-bg-2 space-y-8 p-30px-c' data-aos='fade-up'>
 								<figcaption className='relative flex items-center space-x-3'>
 									<Link
 										className='absolute top-0 right-0'
@@ -365,7 +380,7 @@ const Home = () => {
 								</button>
 							</div>
 
-							<div className='box-bg-2 space-y-8 p-30px-c'>
+							<div className='box-bg-2 space-y-8 p-30px-c' data-aos='fade-up'>
 								<figcaption className='relative flex items-center space-x-3'>
 									<Link
 										className='absolute top-0 right-0'
@@ -417,7 +432,7 @@ const Home = () => {
 							</div>
 						</div>
 						<div className='flex flex-col gap-8'>
-							<div className='box-bg-2 space-y-8 p-30px-c'>
+							<div className='box-bg-2 space-y-8 p-30px-c' data-aos='fade-up'>
 								<figcaption className='relative flex items-center space-x-3'>
 									<Link
 										className='absolute top-0 right-0'
@@ -467,7 +482,7 @@ const Home = () => {
 									Read More
 								</button>
 							</div>
-							<div className='box-bg-2 space-y-8 p-30px-c'>
+							<div className='box-bg-2 space-y-8 p-30px-c' data-aos='fade-up'>
 								<figcaption className='relative flex items-center space-x-3'>
 									<Link
 										className='absolute top-0 right-0'
@@ -515,7 +530,7 @@ const Home = () => {
 									Read More
 								</button>
 							</div>
-							<div className='box-bg-2 space-y-8 p-30px-c'>
+							<div className='box-bg-2 space-y-8 p-30px-c' data-aos='fade-up'>
 								<figcaption className='relative flex items-center space-x-3'>
 									<Link
 										className='absolute top-0 right-0'

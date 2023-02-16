@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import Layout from './routers/layout/layout.component';
 import Home from './routers/home/home.component';
 import NoMatch from './routers/no-match/no-match.component';
-import './assets/tailwind.output.css';
+import './assets/tailwind/tailwind.output.css';
 
 function App() {
 	return (

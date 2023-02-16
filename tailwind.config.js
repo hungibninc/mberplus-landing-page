@@ -45,6 +45,8 @@ module.exports = {
 				'45%c': '45%',
 				'55%c': '55%',
 				'74c': '74px',
+				'256c': '256px',
+				'257c': '257px',
 			},
 			animation: {
 				'banner-desc': 'banner-desc 3s',

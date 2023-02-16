@@ -1,7 +1,7 @@
 {
 	"name": "web",
 	"version": "0.1.0",
-	"homepage": "/react/",
+	"homepage": "/",
 	"private": true,
 	"dependencies": {
 		"@testing-library/jest-dom": "^5.16.5",
@@ -26,8 +26,8 @@
 		"build:preview": "yarn build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",
-		"watch-tw": "npx tailwindcss -i ./src/assets/tailwind.css -o ./src/assets/tailwind.output.css --watch",
-		"dev": "concurrently \"react-scripts start\" \"npx tailwindcss -i ./src/assets/tailwind.css -o ./src/assets/tailwind.output.css --watch\""
+		"watch-tw": "npx tailwindcss -i ./src/assets/tailwind/tailwind.css -o ./src/assets/tailwind/tailwind.output.css --watch",
+		"dev": "concurrently \"react-scripts start\" \"npx tailwindcss -i ./src/assets/tailwind/tailwind.css -o ./src/assets/tailwind/tailwind.output.css --watch\""
 	},
 	"eslintConfig": {
 		"extends": [
