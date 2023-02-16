@@ -25,7 +25,9 @@ import 'aos/dist/aos.css'; // You can also use <link> for styles
 import './home.styles.css';
 
 const Home = () => {
-	AOS.init();
+	AOS.init({
+		duration: 1500,
+	});
 
 	/* const effETest = useParallax({
 		scale: [1, 1, 'easeOutExpo'],
