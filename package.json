@@ -24,7 +24,7 @@
 	"scripts": {
 		"start": "react-scripts start",
 		"build": "react-scripts build",
-		"build:preview": "concurrently \"npx tailwindcss -i ./src/assets/tailwind.css -o ./src/assets/tailwind.output.css\" \"yarn build\"",
+		"build:preview": "concurrently \"npx tailwindcss -i ./src/assets/tailwind/tailwind.css -o ./src/assets/tailwind/tailwind.output.css\" \"yarn build\"",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",
 		"watch-tw": "npx tailwindcss -i ./src/assets/tailwind/tailwind.css -o ./src/assets/tailwind/tailwind.output.css --watch",
